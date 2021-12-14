@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: backend
+    command: npm run start
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend/src:/code/src:ro
+      - ./backend/package.json:/code/package.json
+      - ./backend/package-lock.json:/code/package-lock.json
+      - back-notused:/opt/app/node_modules
+    networks:
+      - public-react-express
+      - private-express-mongo
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    volumes:
+      - db-data:/data/db
+    networks:
+      - private-express-mongo
+    expose:
+      - 27017
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - 80:80
+    volumes:
+      - ./frontend/src:/code/src
+      - /code/node_modules
+    networks:
+      - public-react-express
+    depends_on:
+      - backend
+networks:
+  public-react-express:
+  private-express-mongo:
+volumes:
+  back-notused:
+  db-data:

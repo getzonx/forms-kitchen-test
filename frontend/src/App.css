@@ -1,0 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Nanum+Gothic&display=swap');
+
+body{
+  background-color: #212121;
+  color: whitesmoke;
+}
+
+.main{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header{
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.create-form label{
+  color: whitesmoke !important;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px !important;
+} */
