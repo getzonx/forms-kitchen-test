@@ -2,12 +2,26 @@
 
 A great exercise from Forms Kitchen
 
-## Prerequisites for this example (just for testing and develop proposes)
+------------------
+
+# TL;DR
+
+## Architecture
+![alt text](https://raw.githubusercontent.com/getzonx/forms-kitchen-test/main/assets-db/images/architecture.png)
+
+## Backend (GraphQL)
+[http://forms.balero.digital:8080/graphql](http://forms.balero.digital:8080/graphql) just for testing `Query` and `Mutation`
+
+## FrontEnd (Live Demo)
+[http://forms.balero.digital](http://forms.balero.digital) with `Search`, `Create`, `Read`, `Update` & `Delete`
+
+------------------
+
+## Server prerequisites for this example (just for testing and develop proposes)
 
 1. A linux server (Ubuntu 20.04 LTS)
-2. Docker
-3. Express
-4. MySQL
+2. Docker Engine
+3. Docker Compose
 
 ### Configuring the linux server
 
@@ -51,27 +65,29 @@ sudo usermod -aG docker ${USER}
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 ```
 
+8. Assign permissions
+```bash
 sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+1. Clone this repo
+```bash
+git clone https://github.com/getzonx/forms-kitchen-test.git
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+2. Access to folder
+```bash
+cd forms-kitchen-test
+```
 
-Please make sure to update tests as appropriate.
+3. Run Docker Compose like service
+```bash
+docker-compose up --build -d
+```
+
+4. Done!, Enjoy at http://localhost or live demo http://forms.balero.digital
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
