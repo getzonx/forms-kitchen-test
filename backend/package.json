@@ -15,13 +15,13 @@
     "express-graphql": "^0.12.0",
     "graphql": "^16.1.0",
     "graphql-tools": "^8.2.0",
-    "mongoose": "^6.1.1",
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
-    "@babel/preset-env": "^7.16.4"
+    "@babel/preset-env": "^7.16.4",
+    "nodemon": "^2.0.15"
   }
 }
