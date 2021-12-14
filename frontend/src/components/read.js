@@ -77,7 +77,8 @@ export default function Read() {
     return (
         <div class="read-container">
             <h1 className="main-header">Product list</h1>
-            <Input icon='search' placeholder='Search...' onChange={searchOnDb} />
+            <Input icon='search' placeholder='Search...' onChange={searchOnDb} /> 
+            <div class="add-button-container"><Link to='/create'><Button icon labelPosition='left' primary ><Icon name='add circle' />Add new product</Button></Link></div>
             <div class="table-container">
                 <Table sortable fixed padded='very'>
                     <Table.Header>

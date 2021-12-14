@@ -33,3 +33,9 @@ body{
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
+.add-button-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: block;
+}
