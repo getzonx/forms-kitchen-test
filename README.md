@@ -1,6 +1,6 @@
-# Forms Kitchen Test
+# Form Kitchens Test
 
-A great exercise from Forms Kitchen
+A great exercise from Form Kitchens
 
 ------------------
 
